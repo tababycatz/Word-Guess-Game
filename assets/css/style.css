@@ -3,37 +3,33 @@ background-color: grey;
 
 }
 
-h3 {
-    padding: 10px;
-    font-family:'Bahianita', cursive;
 
+.jumbotron {
+    background-image:url(../images/headerbg.jpeg);
+    background-size: 100%;
 
 }
 
-.jumbotron {
+.display-4 {
     font-family: 'Russo One', sans-serif;
+    font-size: 100px;
     text-align: center;
-    background-color: pink;
     color: white;
 }
 
 
-.col-md-6 {
-    border-style: solid; 
-    border-width: thin;
-    border-color: white;
-    height: 600px;
+.col-md-6, .col-md-12 {
+    border-style: solid, thin; 
+    font-family: 'Bahianita', cursive;
+    color: white;
+    height: 250px;
+    text-align: center;
 
 }
 
 .row {
     height: 150px;
+    text-align: center;
 
-}
-
-.card-footer {
-    font-family: 'Bahianita', cursive;
-    color: white;
-    background-color: pink;
 }
 
