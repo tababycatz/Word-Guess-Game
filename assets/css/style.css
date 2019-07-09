@@ -19,7 +19,6 @@ background-color: grey;
 
 
 .col-md-6, .col-md-12 {
-    border-style: solid, thin; 
     font-family: 'Bahianita', cursive;
     color: white;
     height: 250px;
@@ -33,3 +32,10 @@ background-color: grey;
 
 }
 
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  
