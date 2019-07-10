@@ -36,7 +36,7 @@ for (var i = 0; i < candyBrands.length; i++) {
 
 }
 
-//Declare variables for wins, remaining guesses, user choice//
+//Variables for wins, remaining guesses, user choice//
 
 var wins = 0;
 var remainingGuess = 10;
@@ -44,9 +44,18 @@ var wordChoice;
 var userChoice;
 var stage = 0;
 
-// var rightLetters = "";
-// var wrongLetters = "";
+countGuess.innerHTML = "<strong>"+remainingGuess+"<strong>";
 
-// KeyboardEvent.on("click", function(){
 
-}
+
+var rightLetters = "";
+var wrongLetters = "";
+
+rightLetters.on("click", function(){
+(display).append(rightLetters);
+)}
+
+wrongLetters.on("click", function(){
+    (display).append(wrongLetters);
+
+})
