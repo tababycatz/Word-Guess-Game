@@ -9,53 +9,45 @@
 var candyBrands = [
     "Twizzlers",
     "Skittles",
-    "Sour Patch Kids",
-    "Reese's",
-    "Jolly Rancher",
-    "M&M",
     "Twix",
-    "Kit Kat",
     "Snickers",
     "Starburst",
     "Airheads",
-    "Jelly Belly",
     "Warheads",
     "Butterfinger",
     "Nerds",
     "Haribo",
 ];
 
-//To pick random words from array//
-var randomCandy =
-candyBrands[Math.floor(Math.random() * candyBrands.length)];
-
-//Array for answer//
+//global variables -- visible throughout program// var then name then what it equals to.
+var winCount = 0;
+var lossCount = 0;
+var remainingGuess = 10;
 var rightLetters = [];
-for (var i = 0; i < candyBrands.length; i++) {
-    answer[i] = "_";
+var wrongLetters = [];
+var theChosenWord = "";
+var theLettersofChosenWord = [];
+var blankSpaces = 0;
 
+//function is block of code used to execute multiple tasks//
+function newGame() {
+
+    theChosenWord =  candyBrands[Math.floor(Math.random() * candyBrands.length)];
+    // theChosenWord = .split("");
+    // blankSpaces = theLettersofChosenWord.length;
+    // remainingGuess = 10;
+    // winCount = 0;
+    // lossCount = 0;
+    
+    console.log(theChosenWord);
 }
 
+
+
+//Array for answer//
+// for (var i = 0; i < candyBrands.length; i++) { //
+    // answer[i] = "_";
+
+// } //
+
 //Variables for wins, remaining guesses, user choice//
-
-var wins = 0;
-var remainingGuess = 10;
-var wordChoice;
-var userChoice;
-var stage = 0;
-
-countGuess.innerHTML = "<strong>"+remainingGuess+"<strong>";
-
-
-
-var rightLetters = "";
-var wrongLetters = "";
-
-rightLetters.on("click", function(){
-(display).append(rightLetters);
-)}
-
-wrongLetters.on("click", function(){
-    (display).append(wrongLetters);
-
-})
